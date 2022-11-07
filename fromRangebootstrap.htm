@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Range bootstrap</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <h4 class="text center">Custom Range</h4>
+        <p class="text-center">To style a range menu, add the .form-range class to the input element with type="range":</p>
+        <form action="/action_page.php">
+            <lable for="customrange" class="form-lable">Custome Range:</lable>
+            <input type="range" class="form-range" id="customrange" name="points">
+            <button type="submit" class="btn btn-primary">Submit</button>  
+            <hr>
+            <lable for="customrange" class="form-lable">Cutom Range</lable>  
+            <input type="range" class="form-range" id="cutomrange" name="points" step="10">
+            <button type="submit" class="btn btn-primary">Submit</button> 
+            <hr>
+            <h5>min and max range</h5>
+            <lable for="custrange" class="form-lable">Custom range</lable>
+            <input type="range" class="form-range" id="custrange" name="pts" min="0" max="10">
+        </form>
+        
+    </div>
+    <hr>
+   <p class="text-center"> The .input-group class is a container to enhance an input by adding an icon, text <br>or a button in front or behind the input field as a "help text".<p>
+<br>
+To style the specified help text, use the .input-group-text class:
+      <form action="">
+        <div  class="input-group mb-3">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Enter User name">
+        </div>
+            <div class="input-group mb-3 ">
+            
+                <input class="form-control" type="text" name="email" id="emailid" placeholder="Enter Your Email"><span class="input-group-text">@gmail.com</span>
+            </div>
+
+
+                 <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      </form>
+      <hr>
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text">Small</span>
+        <input type="text" class="form-control">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text">Default</span>
+        <input type="text" class="form-control">
+      </div>
+      <div class="input-group input-group-lg mb-3">
+        <span class="input-group-text">Large</span>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <hr>
+    <div class="container mt-3">
+        <h2 class="text-center text-danger">Multiple Inputs and Helpers</h2>
+        <p class="text-center text-primary">Add multiple inputs or addons:</p>
+         
+        <div class="input-group mb-3">
+            <span class="input-group-text">Person</span>
+            <input type="text" class="form-control" placeholder="First Name">
+            <input type="text" class="form-control" placeholder="Last Name">
+
+        </div>
+
+        <div class="input-group mb3">
+            <span class="input-group-text">One</span>
+            <span class="input-group-text">Two</span>
+            <span class="input-group-text">Three</span>
+            <input tyep="text" class="form-control">
+        </div>
+        
+    </div>
+    <hr>
+    <div class="container mt-3">
+        <h3 class="text-center">Input Group with Checkboxes and Radios</h3>
+        <p class="text-center">You can also use checkboxes or radio buttons instead of text:</p>
+        <div class="input-group mb-3">
+            <div class="input-group-text">
+                <input type="checkbox">
+            </div>
+            <input type="text" class="form-control" placeholder="Some Text">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-text">
+                <input type="radio">
+            </div>
+            <input type="text" class="form-control" placeholder="Some text">
+        </div>
+    </div>
+    <hr>
+    <div class="container mt-3">
+        <h3>Input Group Buttons</h3>
+   
+         <div class="input-group mb-3">
+            <button type="button" class="btn btn-outline-primary">Button</button>
+            <input type="text" class="form-control" placeholder="Some text">
+         </div>
+         <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search text">
+            <button type="button" class="btn btn-success">Go</button>
+         </div>
+         <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Enter Text">
+            <button type="button" class="btn btn-primary">Ok</button>
+            <button class="btn btn-danger" type="button">Cansel</button>
+         </div>
+         <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Something clever..">
+            <button class="btn btn-primary" type="button">OK</button> 
+            <button class="btn btn-danger" type="button">Cancel</button> 
+          </div>
+        </div>
+        <hr>
+        <div class="container mt-3">
+           <h4 class="text-center"> Input Group with Dropdown Button
+Add a dropdown button in the input group. Note that you don't need the .dropdown wrapper, as you normally would.</h4>
+
+           <div class="input-group mt-3">
+             <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">dropdown</button>
+             <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                <li><a class="dropdown-item" href="#">Link 2</a></li>
+             </ul>
+             <input type="text" class="form-control" placeholder="Write Something">
+           </div>
+        </div>
+        <hr>
+        <div class="container mt-3">
+          <h4 class="text-center">  Floating Labels / Animated Labels
+By default, when using labels, they normally appear on top of the input field:
+With floating labels, you can insert the label inside the input field, and make them float/animate when you click on the input field:</h4>
+           <form action="/action_page.php">
+
+            <div class="form-floating mb-3 mt-3">
+
+                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+
+                <label for="email">Email</label>
+
+            </div>
+
+           <div class="form-floating mt-3 mb-3">
+
+              <input type="text" class="form-control" id="pwd" placeholder="Enter Password" name="pswd">  
+
+              <label for="pwd">password</lable>
+
+           </div>
+           
+            <div class="form-floating mt-3 mb-3">
+
+                <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+
+                <label for="pwd">Password</label>
+
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+        </div>
+        <hr>
+        <div class="container mt-3">
+           <p class="text-center"> Textarea
+            It also works for textareas:</p>
+            <form action="/action_page.php">
+              <div class="form-floating mt-3 mb-3">
+                <textarea class="form-control" id="comment" name="text" placeholder="comment goes here"></textarea>
+                <label for="comment">Comment</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <hr>
+        <div class="container mt-3">
+            <h4 class="text-center">Select Menus</h4>
+<p class="text-center">You can also use "floating-labels" on select menus. However, they will not float/get animated. The label will always appear in the top left corner, inside the select menu:</p>
+        </div>
+        <form action="/action_page.php">
+            <div class="form-floating mt-3 mb-3">
+                <select class="form-select" id="sel1" name="selectlist">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <label for="sel1" class="form-lable">Select(select one)</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+</body>
+
+</html>

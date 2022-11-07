@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>progress bar</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <h2>Basic Progress Bar</h2>
+  <p>To create a default progress bar, add a .progress class to a container element and add the progress-bar class to its child element. Use the CSS width property to set the width of the progress bar:</p>
+  <div class="progress">
+    <div class="progress-bar" style="width:70%">70%</div>
+  </div>
+    </div>
+    <hr>
+    <div class="container mt-3">
+        <div class="progress" style="height:30px">
+        <div class="progress-bar" style="width:50%; height:30px">50%</div>
+        </div>
+        <hr>
+        <div class="progress" style="height:20px">
+
+            <div class="progress-bar" style="width:50%;height:20px"></div>
+          </div>
+    </div>
+    <hr>
+    <div class="container mt-3">
+        <h2>Colored Progress Bars</h2>
+        <p>Use any of the contextual color classes to change the color of the progress bar:</p> 
+         <!--red-->
+
+         <div class="progress">
+            <div class="progress-bar bg-warning" style="width:60%">60%</div>
+         </div><br>
+
+        <!-- Blue -->
+
+        <div class="progress">
+          <div class="progress-bar" style="width:10%"></div>
+        </div><br>
+      
+        <!-- Green -->
+        <div class="progress">
+          <div class="progress-bar bg-success" style="width:20%"></div>
+        </div><br>
+      
+        <!-- Turquoise -->
+        <div class="progress">
+          <div class="progress-bar bg-info" style="width:30%"></div>
+        </div><br>
+      
+        <!-- Orange -->
+        <div class="progress">
+           <div class="progress-bar bg-warning" style="width:40%"></div>
+        </div><br>
+      
+        <!-- Red -->
+        <div class="progress">
+          <div class="progress-bar bg-danger" style="width:50%"></div>
+        </div><br>
+      
+        <!-- White -->
+        <div class="progress border">
+          <div class="progress-bar bg-white" style="width:60%"></div>
+        </div><br>
+      
+        <!-- Grey -->
+        <div class="progress">
+          <div class="progress-bar bg-secondary" style="width:70%"></div>
+        </div><br>
+      
+        <!-- Light Grey -->
+        <div class="progress border">
+          <div class="progress-bar bg-light" style="width:80%"></div>
+        </div><br>
+      
+        <!-- Dark Grey -->
+        <div class="progress">
+          <div class="progress-bar bg-dark" style="width:90%"></div>
+        </div>
+      </div>
+      <hr>
+      <div class="container mt-3">
+        <h2>Animated Progress Bar</h2>
+        <p>Add the .progress-bar-animated class to animate the progress bar:</p> 
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
+        </div>
+        <br>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:70%">70%</div>
+        </div>
+      </div>
+      <hr>
+      <div class="container mt-3">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" style="width:50%">safe zone</div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:30%">warning zone</div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:20%">danger zone</div>
+            
+        </div>
+        <hr>
+        <div class="progress">
+          <div class="progress-bar progress-bar-stipped progress-bar-animated" style="width:20%">20</div>
+        </div>
+      </div>
+      
+</body>
+</html>

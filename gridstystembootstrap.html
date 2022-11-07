@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>grid system in bootstrap</title>
+
+</head>
+<body>
+    <h4 class="text-center">The Grid System</h4>
+   
+   <p class="text-center"> Bootstrap's grid system is built with flexbox and allows up to 12 columns across the page.
+    <br>   
+    If you do not want to use all 12 columns individually, you can group the columns together to create wider 
+    columns: 
+    <br>
+    The grid system is responsive, and the columns will re-arrange automatically depending on the screen size.
+       <br>
+    Make sure that the sum adds up to 12 or fewer (it is not required that you use all 12 available columns).  </p>
+
+<h4 class="text-center">Grid Classes</h4>
+<p class="text-center">The Bootstrap 5 grid system has six classes:
+
+<p class="text-center">.col- (extra small devices - screen width less than 576px)<br>
+.col-sm- (small devices - screen width equal to or greater than 576px)<br>
+.col-md- (medium devices - screen width equal to or greater than 768px) <br>
+.col-lg- (large devices - screen width equal to or greater than 992px)<br>
+.col-xl- (xlarge devices - screen width equal to or greater than 1200px)<br>
+.col-xxl- (xxlarge devices - screen width equal to or greater than 1400px)<br>
+The classes above can be combined to create more dynamic and flexible layouts.<br>
+Tip: Each class scales up, so if you want to set the same widths for sm and md, you only need to specify sm.<br>
+</p>
+<div class="container-fluid mt-3">
+<p class="text-center"t>Basic Grid Structure
+Resize the browser window to see the effect.
+
+The first, second and third row will automatically stack on top of each other when the screen is less than 576px wide.</p>
+
+
+<div class="row">
+<div class="col-sm-6 bg-primary text-white">50%</div>
+<div class="col-sm-6 bg-dark text-white">50%</div>
+</div>
+<div class="row">
+    <div class="col-sm-4 bg-dark text-white">33.33%</div>
+    <div class="col-sm-4 bg-info text-white">33.33%</div>
+    <div class="col-sm-4 bg-primary text-white">33.33</div>
+</div>
+<div class="row">
+    <div class="col-sm bg-info text-white">25%</div>
+    <div class="col-sm bg-primary tex-white">25%</div>
+    <div class="col-sm bg-warning text-white">25%</div>
+    <div class="col-sm bg-dark text-white">25%</div>
+
+</div> 
+<div class="row">
+     <div class="col bg-dark text-white">25%</div>
+     <div class="col bg-warning text-white">25%</div>
+     <div class="col bg-primary text-white">25%</div>
+     <div class="col bg-info text-white">25%</div>
+</div>
+<div class="row">
+    <div class="col bg-primary text-white">25%</div>
+    <div class="col bg-dark text-white">25%</div>
+    <div class="col bg-info text-white">25%</div>
+    <div class="col bg-dark text-white">25%</div>
+</div>
+</div>
+<hr>
+Next
+<hr>
+<div class="container mt-3">
+    <h4 class="text-center">Tip: You can turn any full-width layout into a fixed-width responsive layout, by changing the .container-fluid class to .container:</h4>
+<br>
+<div class="row">
+    <div class="col-sm-6 bg-primary text-white">
+        Lorem epsum
+    </div>
+    <div class="col-sm-6 bg-dark text-white">
+        secontd
+    </div>
+</div>
+</div>
+<hr>
+<div class="container mt-3">
+  <h1 class="text-center">Auto Layout Columns</h1>
+        <p class="text-center">In Bootstrap 5, there is an easy way to create equal width columns: just use the <code>.col-size</code> class on a specified number of col elements. Bootstrap will recognize how many columns there are, and each column will get the same width.</p>
+        <p>Two columns: 50% width on all screens, except for extra small (100% width on screens less than <strong>576px</strong> wide)</p></h6>
+        <div class="row mb-3">
+            <div class="col-sm bg-primary text-white">primary</div>
+            <div class="col-sm bg-dark text-white">bg-dark</div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm bg-primary text-white  p-3">primary</div>
+            <div class="col-sm bg-dark text-white  p-3">Dark</div>
+            <div class="col-sm bg-warning text-white p-3">Warning</div>
+            <div class="col-sm bg-primary text-white  p-3">primary</div>
+        </div>
+</div>
+<hr>
+       <div class="container mt-3">
+        <div class="row">
+        <div class="col-3 bg-primary text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div class="col-9 bg-dark text-white"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+        </div>
+       </div>
+</body>
+</html>

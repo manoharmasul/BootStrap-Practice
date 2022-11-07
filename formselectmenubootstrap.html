@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>select menu</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <p>Select Menu</p>
+        <br>
+        Select menus are used if you want to allow the user to pick from multiple options.
+        <br>
+To style a select menu in Bootstrap 5, add the .form-select class to the <!--select--> element:
+<br>
+
+<h2>Select Menu</h2>
+  <p>To style a select menu in Bootstrap 5, add the .form-select class to the select element:</p>
+  <form action="/action_page.php">
+    <label for="sel1" class="form-label">Select list (select one):</label>
+    <select class="form-select" id="sel1" name="sellist1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+    <br>
+
+    <label for="sel2" class="form-label">Mutiple select list (hold shift to select more than one):</label>
+    <select multiple class="form-select" id="sel2" name="sellist2">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+          </form>
+    </div>
+    <hr>
+    <div class="container mt-3">
+        <p>select menu size</p>
+        <form action="">
+          <lable for="selectgames" class="form-lable">Select Games</lable>
+          <select class="form-select form-select-sm" id="selectgames" name="games">
+            <option>Cricket</option>
+            <option>Kabbdi</option>
+            <option>Hocky</option>
+          </select>
+        </form>
+    </div> 
+    <hr>
+    <div class="container mt-3">
+        <p>select menu size</p>
+        <form action="">
+          <lable for="selectgames" class="form-lable">Select Games</lable>
+          <select class="form-select form-select-sm" id="selectgames" name="games">
+            <option>Cricket</option>
+            <option>Kabbdi</option>
+            <option>Hocky</option>
+          </select>
+        </form>
+    </div>
+    <hr>
+    <div class="container mt-3">
+        <p>select menu size</p>
+        <form action="">
+          <lable for="selectgames" class="form-lable">Select Games</lable>
+          <select class="form-select form-select-lg" disabled id="selectgames" name="games">
+            <option>Cricket</option>
+            <option>Kabbdi</option>
+            <option>Hocky</option>
+          </select>
+        </form>
+    </div>
+    <hr>
+    <div class="container mt-3">
+        Data Lists:<br>
+Bootstrap will also style data lists, which is a list of pre-defined options for an <!--input--> element:
+<br>
+Choose your browser from the list:
+<br>
+<h2>Data List</h2>
+
+         <form action="/action_page.php">
+            <lable for="browser">Choose Your Browser:</lable>
+            <input class="form-control" list="browsers" id="browser" name="browerr">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+         </form>
+
+    </div>
+    <hr>
+             <div class="container mt-3">
+                <form action="/action_page.php">
+                    <label for="game">Choose Your Game:</label>
+                    <input class="form-control" list="Games" id="Game" name="Games">
+                    <datalist id="Games">
+                        <option value="Cricket">
+                        <option value="Hocky">
+                        <option value="kabbadi">
+                    </datalist>
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </form>
+             </div>
+</body>
+</html>

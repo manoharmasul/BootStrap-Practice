@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>checkboxes bootstrap</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <h2>Checkboxes</h2>
+  <p>To style a checkbox, use a container element with a .form-check class, and add .form-check-label to labels, and .form-check-input to the input with type="checkbox".</p>
+  <p>The form below contains three checkboxes. The first option is checked by default, and the last option is disabled:</p>
+            <form action="/action_page.php">
+             <div class="from-check">
+                <input type="checkbox" class="form-check-input" id="option1" name="opt1" value="something1">
+                <lable for="option1" class="form-check-lable">Option 1</lable>
+             </div>
+             <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="option2" name="opt2" value="something2">
+                <lable for="option2" class="form-check-lable">Option 2</lable>
+             </div>
+             <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="option3" name="opt3" value="something3" disabled>
+                <lable for="option3" class="form-check-lable">Option 3</lable>
+             </div>
+             <button type="submit" class="btn btn-primary">submit</button>
+            </form>
+              <br>
+        <p>     Example Explained
+To style checkboxes, use a wrapper element with class="form-check" to ensure proper margins for labels and checkboxes.
+<br>
+Then, add the .form-check-label class to label elements, and .form-check-input to style checkboxes properly inside the .form-check container.
+<br>
+Use the checked attribute if you want the checkbox to be checked by default.</p> 
+        
+    </div>
+    <hr>
+    <h4 class="text-center">Radio Buttons</h4>
+    <div class="container mt-3">
+        <p class="text-center">Radio buttons are used if you want to limit the user to just one selection from a list of preset options.</p>
+        <form action="/action_page.php">
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1" name="radio button 1" value="something1" checked>
+                <label for="radio1" class="form-check-lable"><span class="text-primary">Option 1</span></label>               
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2" name="radio button 1" value="something2">
+                <lable for="radio2" class="form-check-lable"><span class="text-warning">Option 2</span></lable>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio3" name="radio button 1" value="something3" disabled>
+                <lable for="radio3" class="form-check-lable"><span class="text-danger">Option 3</span></lable>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">submit</button>
+        </form>
+    </div>
+    <hr>
+    <div class="container mt-3">
+       <h4 class="text-center text-danger">Toggle Switches</h4> 
+<p class="text-center text-primary">If you want your checkbox to be styled as a toggle switch, use the .form-switch class together with the .form-check container:</p>
+          <form action="">
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+                <lable for="myswitch" class="form-check-lable">Dark mode</lable>
+            </div>        
+        <button type="submit" class="btn btn-danger mt-3">Submit</button>
+          </form>
+    </div>
+   <hr>
+   <div class="container mt-3">
+    <form action="">
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="myswitch" name="darkmode" value="yes" checked>
+            <lable class="form-check-lable" for="myswitch">Dark mode on</lable>
+        </div>
+        <button type="submit" class="btn btn-primary">submit</button>
+    </form>
+
+   </div>
+</body>
+</html>
